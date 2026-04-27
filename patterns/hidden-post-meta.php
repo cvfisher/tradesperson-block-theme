@@ -1,10 +1,10 @@
 <?php
 /**
  * Title: Hidden post meta
- * Slug: tradesperson-theme/hidden-post-meta
+ * Slug: tradespress/hidden-post-meta
  * Inserter: no
  *
- * @package tradesperson-theme
+ * @package tradespress
  * @since 1.0.0
  */
 ?>
@@ -18,7 +18,7 @@
 	<!-- /wp:group -->
 	<!-- wp:group {"layout":{"type":"constrained"}} -->
 	<div class="wp-block-group">
-		<!-- wp:post-terms {"term":"category","prefix":"<?php echo esc_html__( 'Categories: ', 'tradesperson-theme' )?>"} /-->
+		<!-- wp:post-terms {"term":"category","prefix":"<?php echo esc_html__( 'Categories: ', 'tradespress' )?>"} /-->
 	</div>
 	<!-- /wp:group -->
 </div>

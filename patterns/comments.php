@@ -1,10 +1,10 @@
 <?php
 /**
  * Title: Comments
- * Slug: tradesperson-theme/comments
+ * Slug: tradespress/comments
  * Categories: text
  *
- * @package tradesperson-theme
+ * @package tradespress
  * @since 1.0.0
  */
 ?>
@@ -14,7 +14,7 @@
 		<!-- wp:comments -->
 		<div class="wp-block-comments">
 			<!-- wp:heading -->
-			<h2><?php esc_html_e( 'Comments', 'tradesperson-theme' ); ?></h2>
+			<h2><?php esc_html_e( 'Comments', 'tradespress' ); ?></h2>
 			<!-- /wp:heading -->
 			<!-- wp:comments-title /-->
 			<!-- wp:comment-template -->

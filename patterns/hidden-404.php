@@ -1,19 +1,19 @@
 <?php
 /**
  * Title: 404
- * Slug: tradesperson-theme/404
+ * Slug: tradespress/404
  * Inserter: no
  *
- * @package tradesperson-theme
+ * @package tradespress
  * @since 1.0.0
  */
 ?>
 <!-- wp:heading {"textAlign":"center", "level": 1} -->
 <h1 class="wp-block-heading has-text-align-center">
-	<?php esc_html_e( 'Page not found', 'tradesperson-theme' ); ?>
+	<?php esc_html_e( 'Page not found', 'tradespress' ); ?>
 </h1>
 <!-- /wp:heading -->
 <!-- wp:paragraph -->
-<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try a search?', 'tradesperson-theme' ); ?></p>
+<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try a search?', 'tradespress' ); ?></p>
 <!-- /wp:paragraph -->
-<!-- wp:search {"label":"<?php echo esc_html_x( 'Search', 'Search form label', 'tradesperson-theme' ); ?>","showLabel":false,"buttonText":"<?php echo esc_html_x( 'Search', 'Search form submit button text', 'tradesperson-theme' ); ?>"} /-->
+<!-- wp:search {"label":"<?php echo esc_html_x( 'Search', 'Search form label', 'tradespress' ); ?>","showLabel":false,"buttonText":"<?php echo esc_html_x( 'Search', 'Search form submit button text', 'tradespress' ); ?>"} /-->
