@@ -14,14 +14,14 @@
 			"custom": true,
 			"palette": [
 				{
-					"color": "#f2f3f4",
+					"color": "#f1f2f3",
 					"name": "Base",
 					"slug": "base"
 				},
 				{
 					"color": "#FFF3E2",
-					"name": "Secondary 2",
-					"slug": "base-2"
+					"name": "Base Soft",
+					"slug": "base-soft"
 				},
 				{
 					"color": "#2b2b2b",
@@ -35,13 +35,13 @@
 				},
 				{
 					"color": "#0062eb",
-					"name": "Secondary",
+					"name": "Accent",
 					"slug": "accent"
 				},
 				{
 					"color": "#FFE8C8",
-					"name": "Secondary",
-					"slug": "accent-2"
+					"name": "Accent Soft",
+					"slug": "accent-soft"
 				},
 				{
 					"color": "transparent",
@@ -63,7 +63,9 @@
 				{ "name": "24px", "size": "1.5rem", "slug": "24" },
 				{ "name": "32px", "size": "2rem", "slug": "32" },
 				{ "name": "48px", "size": "3rem", "slug": "48" },
-				{ "name": "64px", "size": "4rem", "slug": "64" }
+				{ "name": "64px", "size": "4rem", "slug": "64" },
+				{ "name": "72px", "size": "4.5rem", "slug": "72" },
+				{ "name": "80px", "size": "5rem", "slug": "80" }
 			],
 			"units": ["px", "em", "rem", "vh", "vw", "%"],
 			"padding": true,
@@ -87,13 +89,17 @@
 							"fontFamily": "Inter",
 							"fontStyle": "normal",
 							"fontWeight": "400",
-							"src": ["file:./assets/fonts/inter-v20-latin-regular.woff2"]
+							"src": [
+								"file:./assets/fonts/inter-v20-latin/inter-v20-latin-regular.woff2"
+							]
 						},
 						{
 							"fontFamily": "Inter",
 							"fontStyle": "normal",
 							"fontWeight": "600",
-							"src": ["file:./assets/fonts/inter-v20-latin-600.woff2"]
+							"src": [
+								"file:./assets/fonts/inter-v20-latin/inter-v20-latin-600.woff2"
+							]
 						}
 					]
 				},
@@ -105,26 +111,50 @@
 						{
 							"fontFamily": "Oswald",
 							"fontStyle": "normal",
+							"fontWeight": "200",
+							"src": [
+								"file:./assets/fonts/oswald-v57-latin/oswald-v57-latin-200.woff2"
+							]
+						},
+						{
+							"fontFamily": "Oswald",
+							"fontStyle": "normal",
+							"fontWeight": "300",
+							"src": [
+								"file:./assets/fonts/oswald-v57-latin/oswald-v57-latin-300.woff2"
+							]
+						},
+						{
+							"fontFamily": "Oswald",
+							"fontStyle": "normal",
 							"fontWeight": "400",
-							"src": ["file:./assets/fonts/oswald/Oswald-Regular.woff2"]
+							"src": [
+								"file:./assets/fonts/oswald-v57-latin/oswald-v57-latin-regular.woff2"
+							]
 						},
 						{
 							"fontFamily": "Oswald",
 							"fontStyle": "normal",
 							"fontWeight": "500",
-							"src": ["file:./assets/fonts/oswald/Oswald-Medium.woff2"]
+							"src": [
+								"file:./assets/fonts/oswald-v57-latin/oswald-v57-latin-500.woff2"
+							]
 						},
 						{
 							"fontFamily": "Oswald",
 							"fontStyle": "normal",
 							"fontWeight": "600",
-							"src": ["file:./assets/fonts/oswald/Oswald-Semibold.woff2"]
+							"src": [
+								"file:./assets/fonts/oswald-v57-latin/oswald-v57-latin-600.woff2"
+							]
 						},
 						{
 							"fontFamily": "Oswald",
 							"fontStyle": "normal",
 							"fontWeight": "700",
-							"src": ["file:./assets/fonts/oswald/Oswald-Bold.woff2"]
+							"src": [
+								"file:./assets/fonts/oswald-v57-latin/oswald-v57-latin-700.woff2"
+							]
 						}
 					]
 				}
@@ -172,13 +202,22 @@
 		"useRootPaddingAwareAlignments": true
 	},
 	"styles": {
+		"spacing": {
+			"blockGap": "0"
+		},
 		"blocks": {
 			"core/code": {
 				"color": {
 					"text": "var(--wp--preset--color--contrast)"
 				}
+			},
+			"core/navigation": {
+				"spacing": {
+					"blockGap": "var(--wp--preset--spacing--24)"
+				}
 			}
 		},
+
 		"color": {
 			"background": "var(--wp--preset--color--base)",
 			"text": "var(--wp--preset--color--contrast)"
@@ -187,12 +226,23 @@
 			"button": {
 				"color": {
 					"background": "var(--wp--preset--color--accent)",
-					"text": "var(--wp--preset--color--contrast)"
+					"text": "var(--wp--preset--color--base)"
+				},
+				"spacing": {
+					"padding": {
+						"top": "var(--wp--preset--spacing--8)",
+						"right": "var(--wp--preset--spacing--16)",
+						"bottom": "var(--wp--preset--spacing--8)",
+						"left": "var(--wp--preset--spacing--16)"
+					}
+				},
+				"border": {
+					"radius": "8px"
 				}
 			},
 			"heading": {
 				"color": {
-					"text": "var(--wp--preset--color--primary"
+					"text": "var(--wp--preset--color--primary)"
 				},
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--oswald)"
