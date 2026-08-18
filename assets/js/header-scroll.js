@@ -1,12 +1,25 @@
 console.log("header scroll file loaded");
-document.addEventListener("scroll", function () {
-	const header = document.querySelector(".header");
 
-	if (!header) return;
+const header = document.querySelector(".header");
 
-	if (window.scrollY > 50) {
-		header.classList.add("scrolled");
-	} else {
-		header.classList.remove("scrolled");
+if (header) {
+	function updateHeaderHeight() {
+		document.documentElement.style.setProperty(
+			"--header-height",
+			`${header.offsetHeight}px`,
+		);
+
+		console.log("Header height:", header.offsetHeight);
 	}
-});
+
+	function handleScroll() {
+		header.classList.toggle("scrolled", window.scrollY > 50);
+		updateHeaderHeight();
+	}
+
+	updateHeaderHeight();
+	handleScroll();
+
+	window.addEventListener("scroll", handleScroll);
+	window.addEventListener("resize", updateHeaderHeight);
+}

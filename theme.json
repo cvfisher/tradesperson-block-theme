@@ -19,6 +19,11 @@
 					"slug": "base"
 				},
 				{
+					"color": "#e7e9eb",
+					"name": "Base Smoke",
+					"slug": "base-smoke"
+				},
+				{
 					"color": "#FFF3E2",
 					"name": "Base Soft",
 					"slug": "base-soft"
@@ -39,7 +44,7 @@
 					"slug": "accent"
 				},
 				{
-					"color": "#FFE8C8",
+					"color": "#C5E2FC",
 					"name": "Accent Soft",
 					"slug": "accent-soft"
 				},
@@ -51,21 +56,71 @@
 			]
 		},
 		"layout": {
-			"contentSize": "700px",
-			"wideSize": "1100px"
+			"contentSize": "75rem",
+			"wideSize": "87.5rem"
 		},
 		"spacing": {
 			"spacingSizes": [
-				{ "name": "4px", "size": "0.25rem", "slug": "4" },
-				{ "name": "8px", "size": "0.5rem", "slug": "8" },
-				{ "name": "12px", "size": "0.75rem", "slug": "12" },
-				{ "name": "16px", "size": "1rem", "slug": "16" },
-				{ "name": "24px", "size": "1.5rem", "slug": "24" },
-				{ "name": "32px", "size": "2rem", "slug": "32" },
-				{ "name": "48px", "size": "3rem", "slug": "48" },
-				{ "name": "64px", "size": "4rem", "slug": "64" },
-				{ "name": "72px", "size": "4.5rem", "slug": "72" },
-				{ "name": "80px", "size": "5rem", "slug": "80" }
+				{
+					"name": "4px",
+					"size": "0.25rem",
+					"slug": "4"
+				},
+				{
+					"name": "8px",
+					"size": "0.5rem",
+					"slug": "8"
+				},
+				{
+					"name": "12px",
+					"size": "0.75rem",
+					"slug": "12"
+				},
+				{
+					"name": "16px",
+					"size": "1rem",
+					"slug": "16"
+				},
+				{
+					"name": "24px",
+					"size": "1.5rem",
+					"slug": "24"
+				},
+				{
+					"name": "32px",
+					"size": "2rem",
+					"slug": "32"
+				},
+				{
+					"name": "48px",
+					"size": "3rem",
+					"slug": "48"
+				},
+				{
+					"name": "64px",
+					"size": "4rem",
+					"slug": "64"
+				},
+				{
+					"name": "72px",
+					"size": "4.5rem",
+					"slug": "72"
+				},
+				{
+					"name": "80px",
+					"size": "5rem",
+					"slug": "80"
+				},
+				{
+					"name": "96px",
+					"size": "6rem",
+					"slug": "96"
+				},
+				{
+					"name": "120px",
+					"size": "7.5rem",
+					"slug": "120"
+				}
 			],
 			"units": ["px", "em", "rem", "vh", "vw", "%"],
 			"padding": true,
@@ -73,6 +128,7 @@
 			"blockGap": true
 		},
 		"typography": {
+			"defaultFontSizes": false,
 			"dropCap": false,
 			"fluid": true,
 			"lineHeight": true,
@@ -81,79 +137,119 @@
 			"letterSpacing": true,
 			"fontFamilies": [
 				{
-					"name": "Inter",
-					"slug": "inter",
-					"fontFamily": "\"Inter\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+					"fontFamily": "\"IBM Plex Sans\", sans-serif",
+					"name": "IBM Plex Sans",
+					"slug": "ibm-plex-sans",
 					"fontFace": [
 						{
-							"fontFamily": "Inter",
+							"fontFamily": "IBM Plex Sans",
+							"fontWeight": "300",
 							"fontStyle": "normal",
-							"fontWeight": "400",
 							"src": [
-								"file:./assets/fonts/inter-v20-latin/inter-v20-latin-regular.woff2"
+								"file:./assets/fonts/ibm-plex-sans-v23-latin/ibm-plex-sans-v23-latin-300.woff2"
 							]
 						},
 						{
-							"fontFamily": "Inter",
+							"fontFamily": "IBM Plex Sans",
+							"fontWeight": "400",
 							"fontStyle": "normal",
-							"fontWeight": "600",
 							"src": [
-								"file:./assets/fonts/inter-v20-latin/inter-v20-latin-600.woff2"
+								"file:./assets/fonts/ibm-plex-sans-v23-latin/ibm-plex-sans-v23-latin-regular.woff2"
+							]
+						},
+						{
+							"fontFamily": "IBM Plex Sans",
+							"fontWeight": "500",
+							"fontStyle": "normal",
+							"src": [
+								"file:./assets/fonts/ibm-plex-sans-v23-latin/ibm-plex-sans-v23-latin-500.woff2"
+							]
+						},
+						{
+							"fontFamily": "IBM Plex Sans",
+							"fontWeight": "600",
+							"fontStyle": "normal",
+							"src": [
+								"file:./assets/fonts/ibm-plex-sans-v23-latin/ibm-plex-sans-v23-latin-600.woff2"
 							]
 						}
 					]
 				},
 				{
-					"name": "Oswald",
-					"slug": "oswald",
-					"fontFamily": "\"Oswald\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+					"name": "Barlow Condensed",
+					"slug": "barlow-condensed",
+					"fontFamily": "\"Barlow Condensed\", system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
 					"fontFace": [
 						{
-							"fontFamily": "Oswald",
+							"fontFamily": "Barlow Condensed",
+							"fontStyle": "normal",
+							"fontWeight": "100",
+							"src": [
+								"file:./assets/fonts/barlow-condensed-v13-latin/barlow-condensed-v13-latin-100.woff2"
+							]
+						},
+						{
+							"fontFamily": "Barlow Condensed",
 							"fontStyle": "normal",
 							"fontWeight": "200",
 							"src": [
-								"file:./assets/fonts/oswald-v57-latin/oswald-v57-latin-200.woff2"
+								"file:./assets/fonts/barlow-condensed-v13-latin/barlow-condensed-v13-latin-200.woff2"
 							]
 						},
 						{
-							"fontFamily": "Oswald",
+							"fontFamily": "Barlow Condensed",
 							"fontStyle": "normal",
 							"fontWeight": "300",
 							"src": [
-								"file:./assets/fonts/oswald-v57-latin/oswald-v57-latin-300.woff2"
+								"file:./assets/fonts/barlow-condensed-v13-latin/barlow-condensed-v13-latin-300.woff2"
 							]
 						},
 						{
-							"fontFamily": "Oswald",
+							"fontFamily": "Barlow Condensed",
 							"fontStyle": "normal",
 							"fontWeight": "400",
 							"src": [
-								"file:./assets/fonts/oswald-v57-latin/oswald-v57-latin-regular.woff2"
+								"file:./assets/fonts/barlow-condensed-v13-latin/barlow-condensed-v13-latin-regular.woff2"
 							]
 						},
 						{
-							"fontFamily": "Oswald",
+							"fontFamily": "Barlow Condensed",
 							"fontStyle": "normal",
 							"fontWeight": "500",
 							"src": [
-								"file:./assets/fonts/oswald-v57-latin/oswald-v57-latin-500.woff2"
+								"file:./assets/fonts/barlow-condensed-v13-latin/barlow-condensed-v13-latin-500.woff2"
 							]
 						},
 						{
-							"fontFamily": "Oswald",
+							"fontFamily": "Barlow Condensed",
 							"fontStyle": "normal",
 							"fontWeight": "600",
 							"src": [
-								"file:./assets/fonts/oswald-v57-latin/oswald-v57-latin-600.woff2"
+								"file:./assets/fonts/barlow-condensed-v13-latin/barlow-condensed-v13-latin-600.woff2"
 							]
 						},
 						{
-							"fontFamily": "Oswald",
+							"fontFamily": "Barlow Condensed",
 							"fontStyle": "normal",
 							"fontWeight": "700",
 							"src": [
-								"file:./assets/fonts/oswald-v57-latin/oswald-v57-latin-700.woff2"
+								"file:./assets/fonts/barlow-condensed-v13-latin/barlow-condensed-v13-latin-700.woff2"
+							]
+						},
+						{
+							"fontFamily": "Barlow Condensed",
+							"fontStyle": "normal",
+							"fontWeight": "800",
+							"src": [
+								"file:./assets/fonts/barlow-condensed-v13-latin/barlow-condensed-v13-latin-800.woff2"
+							]
+						},
+						{
+							"fontFamily": "Barlow Condensed",
+							"fontStyle": "normal",
+							"fontWeight": "900",
+							"src": [
+								"file:./assets/fonts/barlow-condensed-v13-latin/barlow-condensed-v13-latin-900.woff2"
 							]
 						}
 					]
@@ -162,40 +258,75 @@
 			"fontSizes": [
 				{
 					"fluid": false,
-					"name": "Extra Small",
+					"name": "XS",
 					"size": "0.8rem",
 					"slug": "x-small"
 				},
-				{ "fluid": false, "name": "Small", "size": "1rem", "slug": "small" },
 				{
 					"fluid": false,
-					"name": "Medium",
-					"size": "1.25rem",
+					"name": "SM",
+					"size": "1rem",
+					"slug": "small"
+				},
+				{
+					"fluid": false,
+					"name": "MD",
+					"size": "1.125rem",
 					"slug": "medium"
 				},
 				{
-					"fluid": { "min": "1.25rem", "max": "1.563rem" },
-					"name": "Large",
+					"fluid": {
+						"min": "1.25rem",
+						"max": "1.563rem"
+					},
+					"name": "LG",
 					"size": "1.563rem",
 					"slug": "large"
 				},
 				{
-					"fluid": { "min": "1.563rem", "max": "1.953rem" },
+					"fluid": {
+						"min": "1.563rem",
+						"max": "1.953rem"
+					},
 					"name": "XL",
 					"size": "1.953rem",
 					"slug": "x-large"
 				},
 				{
-					"fluid": { "min": "1.953rem", "max": "2.441rem" },
-					"name": "XXL",
+					"fluid": {
+						"min": "1.953rem",
+						"max": "2.441rem"
+					},
+					"name": "2XL",
 					"size": "2.441rem",
 					"slug": "xx-large"
 				},
 				{
-					"fluid": { "min": "2.441rem", "max": "3.052rem" },
-					"name": "Hero",
+					"fluid": {
+						"min": "2.441rem",
+						"max": "3.052rem"
+					},
+					"name": "3XL",
 					"size": "3.052rem",
-					"slug": "hero"
+					"slug": "xxx-large"
+				},
+				{
+					"fluid": {
+						"min": "3.052rem",
+						"max": "3.815rem"
+					},
+					"name": "4XL",
+					"size": "3.815rem",
+					"slug": "display"
+				},
+				{
+					"fluid": {
+						"min": "3.815rem",
+						"max": "4.768rem"
+					},
+					"name": "5XL",
+					"size": "4.768rem",
+					"slug": "display-large"
 				}
 			]
 		},
@@ -214,6 +345,25 @@
 			"core/navigation": {
 				"spacing": {
 					"blockGap": "var(--wp--preset--spacing--24)"
+				}
+			},
+			"core/heading": {
+				"typography": {
+					"textTransform": "none"
+				},
+				"spacing": {
+					"margin": {
+						"top": "0",
+						"bottom": "var(--wp--preset--spacing--8)"
+					}
+				}
+			},
+			"core/paragraph": {
+				"spacing": {
+					"margin": {
+						"top": "0",
+						"bottom": "0"
+					}
 				}
 			}
 		},
@@ -236,6 +386,7 @@
 						"left": "var(--wp--preset--spacing--16)"
 					}
 				},
+
 				"border": {
 					"radius": "8px"
 				}
@@ -245,14 +396,38 @@
 					"text": "var(--wp--preset--color--primary)"
 				},
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--oswald)"
+					"fontFamily": "var(--wp--preset--font-family--barlow-condensed)"
+				}
+			},
+			"h2": {
+				"typography": {
+					"lineHeight": "1.00",
+					"fontSize": "var(--wp--preset--font-size--xx-large)"
+				},
+				"spacing": {
+					"margin": {
+						"bottom": "var(--wp--preset--spacing--8)"
+					}
+				}
+			},
+			"h3": {
+				"typography": {
+					"lineHeight": "1.00",
+					"fontSize": "var(--wp--preset--font-size--x-large)",
+					"fontWeight": "600"
+				},
+				"spacing": {
+					"margin": {
+						"bottom": "var(--wp--preset--spacing--8)"
+					}
 				}
 			}
 		},
+
 		"typography": {
-			"fontFamily": "var(--wp--preset--font-family--inter)",
+			"fontFamily": "var(--wp--preset--font-family--ibm-plex-sans)",
 			"fontSize": "var(--wp--preset--font-size--medium)",
-			"lineHeight": "1.7"
+			"lineHeight": "1.5"
 		}
 	},
 	"templateParts": [
